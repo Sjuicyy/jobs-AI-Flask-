@@ -1,0 +1,333 @@
+{% extends "skeleton.html" %}
+{% block title %}
+Employer
+{% endblock %}
+
+
+{% block style %}
+.form-control:hover {
+    outline: 2px solid black;
+  }
+
+  .form-control:focus {
+    outline: none;
+  }
+
+  .preview1 {
+
+    width: 100%;
+    margin-top: -100px;
+  }
+
+  .vr1 {
+    display: inline-block;
+    align-self: stretch;
+    width: 20px;
+    min-height: 1em;
+    background-color: red;
+    opacity: ;
+  }
+
+
+      .line {
+    border-right: 3px solid;
+  }
+{% endblock %}
+
+
+{% block content %}
+<div class="row mt-5 ">
+    <!-- <div>
+      <div class="vr1 mx-3">
+        <div class="mx-4">
+          <p>aaa</p>
+          <input type="text">
+          <div>
+            hello
+            <p>world</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+    <div class="col-md-6 mb-2 line">
+      <div class=" p-2 text-center">
+        <h3 class="text-dark mb-5">Employer Dashboard</h3>
+        <canvas id="foo"> </canvas>
+        <div id="preview">
+          <div id="preview-textfield" class="preview1" style="font-size: 24px;"></div>
+        </div>
+        <a href="">
+          <p class="mt-4 text-dark">See My Score</p>
+        </a>
+        <center>
+          <input type="text" id="changer" onchange="changer()" class="w-25">
+          <br> <br> <br>
+          <p> Needs Work , <a href=""> Learn how ?</a> </p>
+
+        </center>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-md-6">
+      <div class="text-center text-dark">
+        <h3>Verifications</h3> <br>
+        <canvas class="w-75  m-auto" id="myChart"></canvas>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+  <!-- FIRST ROW START -->
+
+
+  <div class="row mt-4">
+
+
+    <div class="col-md-4 m-auto line px-4" style="max-width:450px;">
+      <div class=" mb-3 p-2 text-start " style="height: 250px;">
+        <h3 class="text-center text-dark">My Employees</h3> <br>
+        <p>Total Employees: 100</p>
+        <div class="d-flex justify-content-between">
+          <p>Potential Vacancies: 3 </p> <a href=""> VIEW </a>
+        </div>
+        <p class="text-center mt-5">
+          <a href="aaa">View all Employees</a>
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-4 m-auto line" style="max-width:450px;">
+      <div class=" mb-3 p-2 text-start " style="height: 250px">
+        <h3 class="text-center text-dark">Verifications</h3> <br>
+        <h5 class=" fs-6 text-start">This Month</h5>
+        <div class="d-flex justify-content-between">
+          <p>Pending Verifications: </p> <a href=""> VERIFY NOW </a>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p>Employment Verified: </p> <a style="mx-5" href=""> VIEW </a>
+        </div>
+        <p>Responsibility Verified:</p>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 m-auto  mb-5" style="max-width:450px;">
+      <div class=" mb-3 p-2 text-start p-4" style="height: 250px;">
+        <h3 class=" text-center text-dark">Job Board</h3> <br>
+        <div class="d-flex  justify-content-between">
+          <p>Posted Jobs:</p> <a href=""> VIEW</a>
+        </div>
+        <div class="d-flex   mb-5 justify-content-between">
+          <p>Interview Fixed: </p> <a href=""> VIEW</a>
+        </div>
+        <div class="d-flex  justify-content-between">
+          <p>Applications: </p> <a href=""> VIEW</a>
+        </div>
+        <div class="d-flex  justify-content-between">
+          <p>New Applications:</p> <a href=""> VIEW</a>
+        </div>
+        <p class="text-center">
+          <a href="aaa">Post New Job</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SECOND ROW START -->
+
+
+
+
+  <h2 class="mx-5 mb-5 mt-5 fw-bold">Score Impacting Factors</h2>
+  <div class="row">
+    <div class="col-md-4 m-auto line" style="max-width:450px;">
+      <div class=" mb-3 p-2 text-center p-4" style="height: 250px;">
+        <h3 class=" text-dark ">Completed Verification</h3> <br>
+        <h3>Low Impact</h3>
+
+        <h4>0%</h4>
+        <p>Your Employee has not been verified</p>
+        <a href="aaa" class="mt-auto">View Details</a>
+      </div>
+    </div>
+    <div class="col-md-4 m-auto line" style="max-width:450px;">
+      <div class=" mb-3 p-2 text-center p-4" style="height: 250px;">
+        <h3 class=" text-dark ">Avg. Employee Retentation</h3> <br>
+        <h5 class="fs-6 ">NaN Month</h5> <br>
+        <p>Average age of your employee tenure</p>
+        <p></p>
+        <a href="" class="mt-5">View Details</a>
+      </div>
+    </div>
+    <div class="col-md-4 m-auto " style="max-width:450px;">
+      <div class=" mb-3 p-2 text-center p-4" style="height: 250px;">
+        <h3 class=" text-dark ">Employee Rating</h3> <br>
+        <h3 class=" ">Low Impact</h3>
+
+        <h4>0%</h4>
+        <p>Rating obtained from your verified employees</p>
+
+        <a href="aaa" class="mt-auto">View Details</a>
+      </div>
+    </div>
+    <div>
+
+
+
+
+      <!-- THIRD ROW START -->
+
+
+
+      <div class="row mt-5">
+        <div class="col-md-4 m-auto line" style="max-width:450px;">
+          <div class=" mb-3  p-2 text-center p-4" style="height: 250px;">
+            <h3 class=" text-dark ">Salary Performance Index</h3> <br>
+            <h3 class=" ">Low Impact</h3> <br>
+
+            <h4>0%</h4>
+            <p>Your employees average salary based on industry average</p>
+            <a href="aaa" class="mt-auto">View Details</a>
+
+          </div>
+        </div>
+        <div class="col-md-4 m-auto line" style="max-width:450px;">
+          <div class=" mb-3 p-2 text-center p-4" style="height: 250px;">
+            <h3 class=" text-dark ">Profile Completion</h3> <br>
+            <h3 class=" ">Low Impact</h3> <br>
+
+            <h4>0%</h4>
+            <p>Your profile is not Complete</p>
+            <a href="" class="mt-auto">View Details</a>
+          </div>
+        </div>
+        <div class="col-md-4 m-auto " style="max-width:450px;">
+          <div class=" mb-3 p-2 text-center p-4" style="height: 250px;">
+            <h3 class=" text-dark ">Kudos</h3> <br>
+            <h3>Low Impact</h3> <br>
+            <h4>0%</h4>
+            <p>Total Kudos shared between your employees</p>
+            <a href="aaa" class="mt-auto">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mt-5">
+      <h2 class="mx-4 mt-5 fw-bold text-dark">Next Steps</h2>
+      <div class="mx-5">
+        <a href="">Employment Score Report</a><br>
+        <a href="">Background Check</a><br>
+        <a href="">e-Verify</a><br>
+        <a href="">Drug Test</a><br>
+        <a href="">Offer Letter</a><br>
+        <a href="">I-9/W4</a><br>
+        <a href="">Start Day Check List</a><br>
+
+      </div>
+    </div>
+
+  <script>
+    var opts = {
+      angle: 0.01, // The span of the gauge arc
+      lineWidth: 0.1, // The line thickness
+      radiusScale: 1, // Relative radius
+      pointer: {
+        length: 0.6, // // Relative to gauge radius
+        strokeWidth: 0.035, // The thickness
+        color: '#000000' // Fill color
+      },
+      limitMax: 100,     // If false, max value increases automatically if value > maxValue
+      limitMin: 0,     // If true, the min value of the gauge will be fixed
+      colorStop: 'black',    // just experiment with them
+      strokeColor: '#EEEEEE',  // to see which ones work best for you
+      generateGradient: true,
+      highDpiSupport: true,     // High resolution support
+
+    };
+
+    var target = document.getElementById('foo'); // your canvas element
+    var gauge = new Donut(target).setOptions(opts); // create sexy gauge!
+    gauge.maxValue = 500; // set max gauge value
+    gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+    gauge.animationSpeed = 10; // set animation speed (32 is default value)
+    gauge.setTextField(document.getElementById("preview-textfield"))
+    // var buffer = 300
+    //function hello(e) {
+    //gauge.set(buffer); // set actual value
+    //}
+    // hello(buffer)
+
+
+    function changer() {
+      const element = document.getElementById('changer')
+      console.log(element.value)
+
+      gauge.set(element.value)
+    }
+
+    changer()
+    gauge.set(0); // set actual value
+  </script>
+
+
+  <script>
+    const ctx = document.getElementById('myChart');
+
+    const appchart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['june', "", 'july', "", 'August',],
+        datasets: [{
+          data: [20, 20, 20, 30, 40],
+          borderWidth: 6,
+          borderColor: 'black',
+        }]
+      },
+      options: {
+        plugins: {
+          legend: {
+            display: false,
+            labels: {
+              //color: 'rgb(255, 99, 132)'
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            display: false
+          },
+          x: {
+            beginAtZero: true,
+            grid: {
+              display: false,
+
+            }
+          }
+        }
+      },
+
+    });
+  </script>
+
+
+
+{% endblock %}

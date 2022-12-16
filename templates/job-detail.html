@@ -1,0 +1,302 @@
+{% extends "skeleton.html" %}
+{% block title %}
+Job Detail
+{% endblock %}
+
+
+{% block style %}
+
+h3,
+h2 {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,
+Tahoma, Geneva, Verdana, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn1 {
+background-color: rgb(166, 165, 170);
+}
+
+
+a {
+text-decoration: none;
+/* color: orange;
+font-weight: bold;
+font-size: 20px; */
+}
+
+li,
+ul,
+f2 {
+text-align: justify;
+font-size: 13px;
+
+}
+
+a:hover {
+color: orangered;
+}
+
+f1 {
+font-size: 10px;
+}
+
+f2 {
+font-size: 13px;
+}
+
+.btn:hover {
+background-color: rgba(166, 165, 170, 0.597);
+}
+
+.lh {
+line-height: 10px;
+}
+{% endblock %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 px-5">
+      <div class="row ">
+        <div class="col mt-5">
+          <div class="d-flex">
+            <h2 class="px-1">PMP certified Project Manager </h2>
+            <div class="btn btn1 text-dark rounded-0" style="height: 20px">
+              <p style="margin-top: -10px;">Active</p>
+            </div>
+          </div>
+          <div class="fw-bold text-start text-start mx-2">
+            <div class="row">
+              <div class="col-3">Salary</div>
+              <div class="col-6 mx-4 fw-normal">$50-$70 per hour </div>
+            </div>
+            <div class="row">
+              <div class="col-3">Deadline</div>
+              <div class="col-4 mx-4 fw-normal">Feb 28, 2022</div>
+            </div>
+          </div>
+          <div class="btn btn-warning text-dark fw-bold mt-5 rounded-0">SAVE JOB</div>
+        </div>
+        <div class="col-5 mt-5">
+          <p class=" mx-2 text-start text-success fw-bolder">Already Applied <br>
+            <f1 class="fw-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.</f1>
+          </p>
+          <div class="btn btn-warning text-dark fw-bold rounded-0 mx-auto float-end" style="height: 150px;">
+            <p class="mt-5">APPLY</p>
+          </div>
+        </div>
+        <f2>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus consectetur nobis molestiae. Quibusdam
+          blanditiis architecto harum eligendi quisquam est accusamus maiores molestias quae aspernatur quaerat dicta,
+          autem,
+          sum dignissimos porro nemo obcaecati? Quasi, magni cum, mollitia non sunt doloribus
+          dolores doloremque vel praesentium, sequi ad dicta!
+        </f2>
+
+        <h3 class="mt-4">Skills</h3>
+        <div class="d-flex justify-content-around w-75">
+          <div class="btn btn1 text-dark border-0 mx-2 rounded-0">Project Management</div>
+          <div class="btn btn1 text-dark border-0 mx-2 rounded-0">PMP</div>
+          <div class="btn btn1 text-dark border-0 mx-2 rounded-0">Planning</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 px-5">
+      <h3>Posted By</h3>
+      <div class="d-flex">
+        <img class="mt-2"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn1VxZdzcFauJlYZqQafBqA0KilEDfc5elpZ7UkH9cMrZeAa1jMw5vCGP_bV2Owlnjlc8&usqp=CAU"
+          alt="" height="50">
+        <div style="line-height: 10px;">
+          <f1 class="mx-2 h6">Lorem isum dolor sit amet.</f1> <br>
+          <f1 class="mx-2 h6"> ⭐⭐⭐</f1> <br>
+          <f1 class="mx-2 ">Lorem ipsum dolor sit amet consectetur.</f1> <br>
+          <f1 class="mx-2 mt-4">Lorem ipsum dolor sit.</f1> <br>
+          <f1 class="mx-2 ">Lorem ipsum dolor sit.</f1><br>
+        </div>
+      </div>
+      <a class="float-end mx-2 mb-2" href="">Available Jobs</a>
+      <div class="mt-4">
+        <h6 class="fw-bold">Employer Rating and Comments</h6>
+        <div class="row mt-3">
+          <div class="col d-flex">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLQlX8kHgCFYgNqXisB6cWENyTofgINwzUOG_u6zBbliVuY_n5EwFl0W4k1b43X9HcsII&usqp=CAU"
+              alt="" height="40">
+            <div class="mx-2 mb-4" style="line-height: 10px;">
+              <h6>Sammy Joshi<f1 class="mx-2 h6"> ⭐⭐⭐</f1>
+              </h6>
+
+              <div class="mx-1">
+                <f1>Lorem ipsum dolor sit amet.</f1><br>
+                <f1>Lorem ipsum dolor sit amet.</f1><br>
+                <f1>Lorem ipsum dolor sit amet.</f1><br>
+                <f1>Lorem ipsum dolor sit amet.</f1>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR97rX-K3xb2uclVr1Vz1UAoU169UWV3FZwaQ&usqp=CAU"
+              alt="" height="40">
+            <div class="mx-2" style="line-height: 10px;">
+              <h6>Aarju Silwal<f1 class="mx-2 h6"> ⭐⭐⭐⭐⭐</f1>
+              </h6>
+              <div class="mx-1">
+                <f1>Lorem ipsum dolor sit amet.</f1><br>
+                <f1>Lorem ipsum dolor sit amet.</f1><br>
+                <f1>Lorem ipsum dolor sit amet.</f1><br>
+                <f1>Lorem ipsum dolor sit amet.</f1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="d-flex">
+          <h6 class="fw-bold">Reported Salary</h6>
+          <p class="mx-4">Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="row">
+          <div class="col" style="line-height: 10px;">
+            <h6>Lorem ipsum dolor sit.</h6 class="fw-normal">
+            <f1 class="lh-1">Lorem ipsum dolor sit amet consectetur adipisicing.</f1>
+            <f1 class="lh-1">Lorem ipsum dolor sit amet consectetur adipisicing.</f1>
+          </div>
+          <div class="col" style="line-height: 10px;">
+            <h6>Lorem ipsum dolor sit.</h6>
+            <f1 class="lh-1">Lorem ipsum dolor sit amet consectetur adipisicing.</f1>
+            <f1 class="lh-1">Lorem ipsum dolor sit amet consectetur adipisicing.</f1>
+          </div>
+        </div>
+        <div class="mt-4">
+          <div class="d-flex">
+            <h6 class="fw-bold">Kudos</h6>
+            <p class="mx-4">Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="row">
+
+            <div class="col d-flex" style="line-height: 10px;">
+              <h1>542</h1>
+              <div class="mx-2" style="line-height: 12px;">
+                <p class=" h6">Kudos</p>
+                <f1 class="">Lorem ipsum dolor .</f1>
+                <f1 class="">Lorem ipsum dolor .</f1><br>
+                <a class="" href=""> click here</a> <br> <br>
+              </div>
+            </div>
+            <div class="col d-flex" style="line-height: 10px;">
+              <h1>453</h1>
+              <div class="mx-2" style="line-height: 12px;">
+                <p class=" h6">Gossps</p>
+                <f1 class="">Lorem ipsum dolor .</f1>
+                <f1 class="">Lorem ipsum dolor .</f1>
+                <br>
+                <a href=""> click here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-8 px-5">
+      <h3>Job Description</h3>
+      <p>Assess project issues and identify solutions to meet productivity, quality and customer goals</p>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias.</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, molestias.</li>
+
+      <div style="font-size:13px ;">
+        <p class="fw-bold lh-1 mt-4">Required* </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus rerum, eos reiciendis est libero.</p>
+        <p class="lh-1 fw-bold">Additional Duties: </p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, magnam illum. Rerum, pariatur maiores?
+        Tenetur
+        mollitia incidunt voluptatum reiciendis nobis.</p>
+      </div>
+      <div class="d-flex mt-5 justify-content-around">
+        <a class="fw-bold text-warning h6" href="#">SIMILAR JOBS</a>
+        <a class="fw-bold text-warning h6" href="#">SAVE</a>
+        <a class="fw-bold text-warning h6" href="#">APPLY</a>
+      </div>
+    </div>
+    <div class="col-md-4 px-5 lh">
+      <h3>Job Summary</h3>
+      <div class="d-flex ">
+        <p class="col fw-bold">Company</p>
+        <p class="col">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex lh">
+        <p class="col fw-bold">job title</p>
+        <p class="col">Lorem ipsumqrwgetqrfd dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Address</p>
+        <p class="col">Lorem ipsum dolqrgeor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Position</p>
+        <p class="col">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Category</p>
+        <p class="col">Lorem qfgafipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Openings</p>
+        <p class="col">Lorem ipsumfdasgv dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Level</p>
+        <p class="col">Lorem ipsum qrdolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Education</p>
+        <p class="col">Lorem ipsum dewrolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Salary</p>
+        <p class="col">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Pay Rate</p>
+        <p class="col">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Working Days</p>
+        <p class="col">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Working Hours</p>
+        <p class="col">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Experience</p>
+        <p class="col">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Education</p>
+        <p class="col">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">License</p>
+        <p class="col">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex">
+        <p class="col fw-bold">Deadline</p>
+        <p class="col">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="d-flex p-4 justify-content-between">
+        <a class="fw-bold text-warning h6" href="#">SAVE</a>
+        <a class="fw-bold text-warning h6" href="#">APPLY</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

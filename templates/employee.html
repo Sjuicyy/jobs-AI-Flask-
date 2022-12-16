@@ -1,0 +1,148 @@
+{% extends "skeleton.html" %}
+{% block title %}
+Employee
+{% endblock %}
+
+
+{% block style %}
+.cardborder {
+    border: none;
+    height: 10px;
+}
+
+.cardborder2 {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 0;
+    border-width: 5px;
+    color: rgb(77, 74, 74);
+
+}
+{% endblock %}
+
+
+{% block content %}
+<h2>Employee Dashboard</h2>
+</div>
+</div>
+
+<div class="p-4">
+    <div class="row">
+        <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+            <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                <h4 style="color:#4f4f4f ;">My Employer</h4>
+                <p class="mt-3 text-secondary">total Employer: 100</p>
+                <p class="text-secondary">potential vacancies <strong>3</strong>
+
+                    <a href="#" style="text-decoration:none ;" class="float-end mx-3">View</a>
+                </p>
+
+                <a href="#" class="card-lin0k1 mt-auto  text-decoration-none">View all Employers-></a>
+
+
+            </div>
+        </div>
+        <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+            <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                <h4 style="color:#4f4f4f ;">My Certifications</h4>
+                <p class="mt-3 text-secondary">Data Scientist</p>
+                <p class="text-secondary">Microsoft</p>
+                <p class="text-secondary">Completion Date: dd/mm/yyyy</p>
+                <a href="#" class="card-link mt-auto  text-decoration-none">View Other Certifications-></a>
+
+
+            </div>
+        </div>
+        <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+            <div class="card mb-3 p-2 text-center cardborder" style="height: 200px;">
+                <h4 style="color:#4f4f4f ;">My Job Status</h4>
+
+                <p class="text-secondary">Active</p>
+                <p class="text-secondary">Applied: 3 This Month</p>
+
+                <div class="card-link mt-auto"><a href="#" class=  "text-decoration-none"> View Applied Jobs-><a href="#"
+                            class="mx-4  text-decoration-none"> New Jobs-></a></div>
+
+            </div>
+        </div>
+    </div>
+    <h4 class="mb-3 mt-3">Score impacting Factors</h4>
+    <div class="row">
+        <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+            <div class="card mb-4 p-2 text-center cardborder2" style="height: 200px;">
+                <h4 style="color:#4f4f4f ;">Employment Verification</h4>
+
+                <p class="text-secondary">Low Impact</p>
+                <p class="text-secondary">0.00%</p>
+                <p class="text-secondary">Your employement has not been verified</p>
+                <a href="#" class=  text-decoration-none card-link mt-auto"> View Details-></a>
+
+            </div>
+        </div>
+        <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+            <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                <h4 style="color:#4f4f4f ;">Employment History</h4>
+                <p class="text-secondary">NaN Monts</p>
+                <p class="text-secondary">Average age of your job length</p>
+                <a href="#" class="text-decoration-none card-link mt-auto"> View Details-></a>
+
+            </div>
+        </div>
+        <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+            <div class="card mb-3 p-2 text-center cardborder" style="height: 200px;">
+                <h4 style="color:#4f4f4f ;">Negetive Review</h4>
+                <p class="text-secondary">High Impact</p>
+                <p class="text-secondary">0</p>
+                <p class="text-secondary">Negative info reported by your Employer</p>
+                <a href="#" class=  text-decoration-none card-link mt-auto"> View Details-></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+            <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                <h4 style="color:#4f4f4f ;">Profile Completion</h4>
+                <p class="text-secondary">Low Impact</p>
+                <p class="text-secondary">60</p>
+                <p class="text-secondary">Negative info reported by your Employer</p>
+                <a href="#" class=  text-decoration-none card-link mt-auto"> View Details-></a>
+            </div>
+        </div>
+        <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+            <div class="card mb-3 p-2 text-center cardborder2" style="height: 200px;">
+                <h4 style="color:#4f4f4f ;">Years of Experience</h4>
+                <p class="text-secondary">NaN Months</p>
+                <p class="text-secondary">Your years of experience</p>
+                <a href="#" class=  text-decoration-none card-link mt-auto"> View Details-></a>
+            </div>
+        </div>
+        <div class="col-md-4 m-auto mt-3" style="max-width:450px;">
+            <div class="card mb-3 p-2 text-center cardborder" style="height: 200px;">
+                <h4 style="color:#4f4f4f ;">Kudos</h4>
+                <p class="text-secondary">Low Impact</p>
+                <p class="text-secondary">0 Received</p>
+                <p class="text-secondary">Kudos your colleagues and manager gave</p>
+                <a href="#" class=  text-decoration-none card-link mt-auto"> View Details-></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container m-auto">
+    <h3>Next steps</h3>
+    <ul style="list-style-type:none;">
+
+        <li><a href="#" style="text-decoration:none ">Background Check</a><br></li>
+        <li><a href="#" style="text-decoration:none ;">e-verify</a><br></li>
+        <li><a href="#" style="text-decoration:none ;">drug test</a><br></li>
+        <li><a href="#" style="text-decoration:none ;">offer letter</a><br></li>
+        <li><a href="#" style="text-decoration:none ;">Start State Details</a><br></li>
+        <li><a href="#" style="text-decoration:none ;">I-9/W4</a><br></li>
+        <li><a href="#" style="text-decoration:none ;">First Day Check List</a><br></li>
+        <li>
+    </ul>
+</div>
+</div>
+
+
+{% endblock %}

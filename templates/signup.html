@@ -1,0 +1,174 @@
+{% extends "skeleton.html" %}
+{% block title %}
+Sign Up
+{% endblock %}
+
+
+{% block style %}
+p {
+color: #303F9F;
+}
+
+.or {
+font-size: xx-small;
+text-align: center;
+border-bottom: 1px solid #ddd;
+line-height: 0.1em;
+margin: 30px 0px 60px;
+color: black;
+font-weight: bold;
+}
+
+.or span {
+background: #fff;
+padding: 15px;
+border: 1px solid #ddd;
+border-radius: 50px;
+}
+
+
+
+#employer {
+display: none;
+}
+
+.form-control:hover {
+outline: 1.5px solid black;
+}
+
+.form-control:focus {
+outline: none;
+}
+
+label {
+font-size: small;
+}
+
+.btn {
+color: rgb(255, 255, 255);
+background-color: #4050b5;
+}
+
+.btn:hover {
+background-color: #4050b5;
+color: white;
+}
+{% endblock %}
+
+
+{% block content %}
+<div class=" container mt-5 ">
+    <div class="row ">
+        <div class="col-md-5 mt-5 mb-5 ">
+            <div class="text-center ">
+                <h3><b>
+                        <p>We are glad you are here, Lets get started</p>
+                    </b></h3>
+                <img src="https://www.jobsai.org/assets/icons/job.png" height="150px" class="mt-3" alt="">
+                <p style="font-size: 14px;"> <b>FIND JOBS WITH ARTIFICIAL INTELLIGENCE</b></p>
+                <p style="font-size: 10px; font-weight: bold; max-width:370px;margin:auto">
+                    Jobs-AI use artificial intelligence and AI helps you to find best matching jobs by evaluating
+                    your skills. You can see, how much percent of your skill matched with job post.</p>
+            </div>
+            <br><br>
+        </div>
+        <div class="col-2 "></div>
+        <div class="col-md-5 " style="max-width: 600px;">
+            <div class="shadow-sm border border-bottom rounded-3 p-3 w-100" style="background-color: #ffffff;">
+                <div>
+                    <p style="color: black;"> <b>Create your Account</b></p>
+                    <p style="color: black;">Account Type</p>
+
+                    <div class="mb-4">
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn w-100" id="seekerbtn">Job seeker</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn w-100" id="employerbtn"
+                                    style="background-color: white; color:#282525">Employer</button>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-outline" id="seeker">
+                        <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                        <label class="form-label" for="formControlLg">Full Name *</label>
+                    </div>
+                    <div class="form-outline mt-4 " id="employer">
+                        <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                        <label class="form-label" for="formControlLg">Company Name *</label>
+                    </div>
+                    <div class="form-outline mt-4">
+                        <input type="text" id="typePassword" class="form-control form-control-lg" />
+                        <label class="form-label" for="......">Contact Number</label>
+                    </div>
+                    <div class="form-outline mt-4">
+                        <input type="text" id="......" class="form-control form-control-lg" />
+                        <label class="form-label" for="......">Email *</label>
+                    </div>
+                    <div class="form-outline mt-4">
+                        <input type="password" id="......" class="form-control form-control-lg" />
+                        <label class="form-label" for="......">Password *</label>
+                    </div>
+                    <div class="form-outline mt-4">
+                        <input type="password" id="......" class="form-control form-control-lg" />
+                        <label class="form-label" for="......">Confirm Password *</label>
+                    </div>
+
+                    <br>
+                    <div class=" mt-4">
+                        <p class="float-start">
+                            Already have account?
+                            <a href="./login.html" class="">Log In</a>
+                        </p>
+                        <button class="btn float-end " style="background-color:#365899;color:white;">Register</button>
+                        <div>
+                            <br>
+                            <h2 class="or"><span>OR</span></h2>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn- " style="background-color:#365899;color:white;">
+                                <img src="https://www.jobsai.org/assets/image/fb-icon.png" alt="">
+                                Log In with Facebook
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+<script>
+    const btn1 = document.getElementById("seekerbtn");
+    btn1.addEventListener("click", (e) => onTabChanged("seekerbtn", "employerbtn"));
+
+
+    const btn2 = document.getElementById("employerbtn");
+    btn2.addEventListener("click", (e) => onTabChanged("employerbtn", "seekerbtn"));
+
+    function onTabChanged(activeClas, disableClass) {
+        document.getElementById(activeClas).style.background = "#4050b5";
+        document.getElementById(activeClas).style.color = "white";
+        document.getElementById(disableClass).style.background = "white";
+        document.getElementById(disableClass).style.color = "black";
+        if (activeClas === "employerbtn") {
+            document.getElementById("employer").style.display = "block";
+            document.getElementById("seeker").style.display = "none"
+        }
+        else {
+            document.getElementById("seeker").style.display = "block";
+            document.getElementById("employer").style.display = "none";
+        }
+    }
+</script>
+
+
+{% endblock %}

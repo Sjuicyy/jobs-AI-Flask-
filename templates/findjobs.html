@@ -1,0 +1,125 @@
+{% extends "skeleton.html" %}
+{% block title %}
+Find Jobs
+{% endblock %}
+
+
+{% block style %}
+.form-control {
+    line-height: 2.5;
+}
+
+.form-control:hover {
+    cursor: pointer;
+    outline: 1px solid black;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.find {
+    border: #3f51b5;
+    border-radius: 5px;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px 0 #00000024, 0 1px 5px 0 #0000001f;
+    background-color: #3f51b5;
+    color: white;
+    line-height: 3.1;
+    /* width: 80%; */
+}
+
+.find:hover {
+    background-color: #2b387e;
+    color: white;
+}
+
+.cardv1 {
+    width: 100%;
+    margin-bottom: 50px;
+    background: #fff;
+    color: #000000de;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    box-decoration-break: none;
+}
+
+.flexbutton {
+    border: 1px solid rgb(196, 187, 187);
+    border-radius: 4px;
+}
+
+.flexbdrop:after {
+    text-decoration: none;
+}
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="card cardv1 text-center">
+                <div class="card-body">
+                    <div class="search">
+                        <div class="container">
+                            <div class="row mt-lg-1 text-center">
+                                <form action="">
+                                    <div class="row gx-lg-2">
+                                        <div class="col-lg-6 col-sm-12 form-group mb-2">
+                                            <input type="text" name="" class="form-control" id=""
+                                                placeholder="Job Title, Keywords" required>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-12 form-group mb-2">
+                                            <input type="text" class="form-control" name="" id=""
+                                                placeholder="City, State, Country" required>
+                                        </div>
+                                        <div class="col-lg-1"><button type="button" class="find w-100">Find
+                                                Job</button></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around mt-3 mb-1">
+                        <div class="px-1 py-1 flexbutton"><a href="#" class="btn"
+                                style="font-weight: 600;">Category</a></div>
+
+                        <div class="px-1 py-1 flexbutton dropdown"><a href="#" class="btn dropdown-toggle flexdrop"
+                                style="font-weight: 600;" data-bs-toggle="dropdown">position</a>
+                            <div class="dropdown-menu text-center">
+                                <a href="#" class="dropdown-item">Inbox</a>
+                                <a href="#" class="dropdown-item">Drafts</a>
+                                <a href="#" class="dropdown-item">Sent Items</a>
+                            </div>
+                        </div>
+
+                        <div class="px-1 py-1 flexbutton"><a href="#" class="btn"
+                                style="font-weight: 600;">Employment</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="card cardv1 text-center">
+                <div class="card-body">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

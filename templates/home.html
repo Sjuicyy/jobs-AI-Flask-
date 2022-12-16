@@ -1,0 +1,114 @@
+{% extends "skeleton.html" %}
+{% block title %}
+Welcome to JobsAI
+{% endblock %}
+{% block style %}
+.p1 {
+color: #3030b6;
+font-size: 24px;
+font-weight: 600;
+margin-bottom: 0;
+}
+.p2 {
+font-size: 12px;
+color: #000000de;
+}
+.caa {
+text-decoration: none;
+}
+.caa:hover {
+text-decoration: underline;
+}
+.form-control {
+line-height: 2.5;
+}
+.form-control:hover {
+cursor: pointer;
+outline: 1px solid black;
+}
+.form-control:focus {
+border-color: inherit;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+.find {
+border: #3f51b5;
+border-radius: 5px;
+box-shadow: 0 3px 1px -2px #0003, 0 2px 2px 0 #00000024, 0 1px 5px 0 #0000001f;
+background-color: #3f51b5;
+color: white;
+line-height: 3.1;
+}
+.find:hover {
+background-color: #2b387e;
+color: white;
+}
+view.hover {
+background-color: #2b387e;
+color: white;
+}
+.cardv1 {
+width: 100%;
+margin-bottom: 50px;
+background: #fff;
+color: #000000de;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+display: block;
+position: relative;
+border-radius: 4px;
+}
+{% endblock %}
+{% block content %}
+<section id="hero" class="d-flex align-items-center mb-2 mt-4">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="hero d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 mx-auto text-center safa" style="margin-top: 50px;">
+
+                        <img src="https://www.jobsai.org/assets/image/background.png"
+                            style="max-width: 100%; height: 250px;" alt="">
+                        <p class="p1">RIGHT JOBS FOR RIGHT CANDIDATE</p>
+                        <p class="p2">Find your dream job with Jobs-AI. <a class="caa" href="#"
+                                style="color: #000000de;">Create
+                                an account</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<div class="search">
+    <div class="container">
+        <div class="row mt-lg-1 text-center">
+            <form action="">
+                <div class="row gx-lg-2">
+                    <div class="col-lg-6 col-sm-12 form-group mb-2">
+                        <input type="text" name="" class="form-control" id="" placeholder="Job Title, Keywords"
+                            required>
+                    </div>
+                    <div class="col-lg-5 col-sm-12 form-group mb-2">
+                        <input type="text" class="form-control" name="" id="" placeholder="City, State, Country"
+                            required>
+                    </div>
+                    <div class="col-lg-1"><button type="button" class="find w-100">Find Job</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container mt-5 mb-5">
+    <div class="row" style="margin-top: 8rem;">
+        <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="card cardv1 text-center">
+                <div class="card-body">
+                    <p class="card-title fw-bold" style="margin-bottom: 50px; font-size: 24px;"><span
+                            style="color: #3f51b5;">Popular</span> Jobs</p>
+                    <div class="d-flex justify-content-start"><button type="button" class="btn View"
+                            style="background-color: #3f51b5; color:white;">View All</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
